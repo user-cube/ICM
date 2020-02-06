@@ -1,8 +1,12 @@
-# ICM
+package com.rc.scrollingtext;
 
-## Notes
-Enable Dark Mode
-```java
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.res.Configuration;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
     /**
      * Sets dark or light mode according to user changes.
      *
@@ -19,14 +23,10 @@ Enable Dark Mode
                 break;
         }
     }
-```
-In `styles.xml` change to 
-```xml
-<resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
-        <!-- Customize your theme here. -->
-    </style>
-</resources>
-```
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
