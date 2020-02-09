@@ -16,12 +16,10 @@ Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
 ```
 
 ## ShareCompat.IntentBuilder
-| Método | Descrição                   |
----------|-----------------------------|
-| from() | Activity que lança a Intent |
-| setType() | MIME Type do item que vai ser partilhado |
-| setChooserTitle() | Título que aparece no seletor da APP |
-| setText() | Texto que vai ser partilhado |
-| startChooser() | Mostra o seletor da app e envia a Intent |
-
-
+| Método            | Descrição                                |
+|-------------------|------------------------------------------|
+| from()            | Activity que lança a Intent              |
+| setType()         | MIME Type do item que vai ser partilhado |
+| setChooserTitle() | Título que aparece no seletor da APP     |
+| setText()         | Texto que vai ser partilhado             |
+| startChooser()    | Mostra o seletor da app e envia a Intent |
