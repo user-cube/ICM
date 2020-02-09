@@ -23,12 +23,12 @@ Este filtro indica que esta Activity é o ponto principal de entrada para o apli
 ```
 Estas linhas definem:
 
-| Tipo de filtro | Valor | Match |
-|----------------|-------|-------|
-| action | 	"android.intent.action.VIEW" | Qualquer Intent com ações na View |
-| category | "android.intent.category.DEFAULT" | Qualquer Intent Implícita. Esta categoria deve ser incluída na nossa Acitivity para receber qualquer Intent Implícita |
-| category | "android.intent.category.BROWSABLE" | Pede links pesquisáveis para páginas web, emails ou outras fontes | 
-| data | android:scheme="http" <br> android:host="developer.android.com" | URIs que contêm o esquema do método http e o host name do developer.android.com |
+| Tipo de filtro | Valor                                                           | Match                                                                                                                 |
+|----------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| action         | "android.intent.action.VIEW"                                    | Qualquer Intent com ações na View                                                                                     |
+| category       | "android.intent.category.DEFAULT"                               | Qualquer Intent Implícita. Esta categoria deve ser incluída na nossa Acitivity para receber qualquer Intent Implícita |
+| category       | "android.intent.category.BROWSABLE"                             | Pede links pesquisáveis para páginas web, emails ou outras fontes                                                     |
+| data           | android:scheme="http" <br> android:host="developer.android.com" | URIs que contêm o esquema do método http e o host name do developer.android.com                                       |
 
 ## Sumário 
 * An implicit Intent allows you to activate an Activity if you know the action, but not the specific app or Activity that will handle that action.
