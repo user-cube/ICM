@@ -1,6 +1,12 @@
 ## Lesson 1
 Build your first app.
 
+- [Lesson 1](#lesson-1)
+  * [Hello World](#hello-world)
+  * [Part A: Your first interactive UI](#part-a--your-first-interactive-ui)
+  * [Part B: The layout editor](#part-b--the-layout-editor)
+  * [Text and scrolling views](#text-and-scrolling-views)
+
 ### Hello World
 After you successfully install Android Studio, you will create, from a template, a new project for the Hello World app. This simple app displays the string "Hello World" on the screen of the Android virtual or physical device.
 

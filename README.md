@@ -1,10 +1,7 @@
 # ICM
 Introdução à Computação Móvel.
 
-## Table of Contents
-
 - [ICM](#icm)
-  * [Table of Contents](#table-of-contents)
   * [Authors](#authors)
   * [Notes](#notes)
   * [Lesson 1](https://github.com/user-cube/ICM/tree/master/Lesson%201)
