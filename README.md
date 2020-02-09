@@ -3,16 +3,15 @@ Introdução à Computação Móvel.
 
 - [ICM](#icm)
   * [Authors](#authors)
-  * [Notes](#notes)
   * [Lesson 1](https://github.com/user-cube/ICM/tree/master/Lesson%201)
   * [Lesson 2](https://github.com/user-cube/ICM/tree/master/Lesson%202)
-
+  * [Dark Mode](#dark-mode)
 ## Authors
 * [Rui Coelho](https://github.com/user-cube)
 
 
-## Notes
-Enable Dark Mode
+## Dark Mode
+To set up Dark Mode e must create an `onConfigurationChanged`that will detect when user changes his theme color.
 ```java
     /**
      * Sets dark or light mode according to user changes.
@@ -31,7 +30,7 @@ Enable Dark Mode
         }
     }
 ```
-In `styles.xml` change to 
+And in `styles.xml` we must change: 
 ```xml
 <resources>
 
