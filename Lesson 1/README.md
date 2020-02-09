@@ -1,7 +1,5 @@
-## Lesson 1
-Build your first app.
-
-- [Lesson 1](#lesson-1)
+# Lesson 1
+- [Build your first app](#lesson-1)
   * [Hello World](#hello-world)
   * [Part A: Your first interactive UI](#part-a--your-first-interactive-ui)
   * [Part B: The layout editor](#part-b--the-layout-editor)
