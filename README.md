@@ -5,6 +5,7 @@ Introdução à Computação Móvel.
   * [Authors](#authors)
   * [Lesson 1](https://github.com/user-cube/ICM/tree/master/Lesson%201)
   * [Lesson 2](https://github.com/user-cube/ICM/tree/master/Lesson%202)
+  * [Challenges](https://github.com/user-cube/ICM/tree/master/Challenges)
   * [Dark Mode](#dark-mode)
 ## Authors
 * [Rui Coelho](https://github.com/user-cube)
