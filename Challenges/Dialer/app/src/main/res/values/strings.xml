@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dialer</string>
+    <string name="round_button">1</string>
+    <string name="round_button2">2</string>
+    <string name="round_button3">3</string>
+    <string name="round_button4">4</string>
+    <string name="round_button5">5</string>
+    <string name="round_button6">6</string>
+    <string name="round_button7">7</string>
+    <string name="round_button8">8</string>
+    <string name="round_button0">0</string>
+    <string name="round_button9">9</string>
+    <string name="round_buttonAst">*</string>
+    <string name="round_buttonHash">#</string>
+    <string name="Dialer"> </string>
+    <string name="button">Delete</string>
+</resources>

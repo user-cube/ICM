@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="112dp"
+    tools:layout_editor_absoluteY="-3dp">
+
+    <Button
+        android:id="@+id/delete"
+        android:onClick="deleteChar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        app:layout_constraintBottom_toTopOf="@+id/push_button"
+        app:layout_constraintEnd_toStartOf="@+id/numberToDial"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/push_button"
+        android:layout_width="98dp"
+        android:layout_height="100dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button"
+        app:layout_constraintBottom_toTopOf="@+id/push_button6"
+        app:layout_constraintEnd_toStartOf="@+id/push_button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberToDial" />
+
+    <Button
+        android:id="@+id/push_button10"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button8"
+        app:layout_constraintBottom_toTopOf="@+id/push_button13"
+        app:layout_constraintEnd_toStartOf="@+id/push_button11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button9"
+        app:layout_constraintTop_toBottomOf="@+id/push_button7" />
+
+    <Button
+        android:id="@+id/push_button13"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/push_button14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button12"
+        app:layout_constraintTop_toBottomOf="@+id/push_button10" />
+
+    <Button
+        android:id="@+id/push_button12"
+        android:layout_width="98dp"
+        android:layout_height="100dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_buttonAst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/push_button13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/push_button9" />
+
+    <Button
+        android:id="@+id/push_button14"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_buttonHash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button13"
+        app:layout_constraintTop_toBottomOf="@+id/push_button11" />
+
+    <Button
+        android:id="@+id/push_button8"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button6"
+        app:layout_constraintBottom_toTopOf="@+id/push_button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button7"
+        app:layout_constraintTop_toBottomOf="@+id/push_button5" />
+
+    <Button
+        android:id="@+id/push_button2"
+        android:onClick="addToDialer"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:padding="15dp"
+        android:text="@string/round_button2"
+        app:layout_constraintBottom_toTopOf="@+id/push_button7"
+        app:layout_constraintEnd_toStartOf="@+id/push_button5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button"
+        app:layout_constraintTop_toBottomOf="@+id/numberToDial" />
+
+    <Button
+        android:id="@+id/push_button9"
+        android:layout_width="98dp"
+        android:layout_height="100dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button7"
+        app:layout_constraintBottom_toTopOf="@+id/push_button12"
+        app:layout_constraintEnd_toStartOf="@+id/push_button10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/push_button6" />
+
+    <Button
+        android:id="@+id/push_button5"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button3"
+        app:layout_constraintBottom_toTopOf="@+id/push_button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button2"
+        app:layout_constraintTop_toBottomOf="@+id/dial" />
+
+    <Button
+        android:id="@+id/push_button11"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button9"
+        app:layout_constraintBottom_toTopOf="@+id/push_button14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button10"
+        app:layout_constraintTop_toBottomOf="@+id/push_button8" />
+
+    <Button
+        android:id="@+id/push_button7"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button5"
+        app:layout_constraintBottom_toTopOf="@+id/push_button10"
+        app:layout_constraintEnd_toStartOf="@+id/push_button8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/push_button6"
+        app:layout_constraintTop_toBottomOf="@+id/push_button2" />
+
+    <Button
+        android:id="@+id/push_button6"
+        android:layout_width="98dp"
+        android:layout_height="100dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="addToDialer"
+        android:padding="15dp"
+        android:text="@string/round_button4"
+        app:layout_constraintBottom_toTopOf="@+id/push_button9"
+        app:layout_constraintEnd_toStartOf="@+id/push_button7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/push_button" />
+
+    <EditText
+        android:id="@+id/numberToDial"
+        android:layout_width="227dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:onClick="addToDialer"
+        android:text="@string/Dialer"
+        app:layout_constraintBottom_toTopOf="@+id/push_button"
+        app:layout_constraintEnd_toStartOf="@+id/dial"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dial"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:onClick="sendToDialer"
+        app:layout_constraintBottom_toTopOf="@+id/push_button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/numberToDial"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+</androidx.constraintlayout.widget.ConstraintLayout>
