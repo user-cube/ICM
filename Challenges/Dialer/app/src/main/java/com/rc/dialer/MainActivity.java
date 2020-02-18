@@ -1,8 +1,12 @@
 package com.rc.dialer;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,11 +14,44 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText number;
 
-    public void onConfigurationChanged (Configuration newConfig){
+    /**
+     * List of permissions to be asked.
+     */
+    String[] permissions = new String[]{
+            Manifest.permission.CALL_PHONE
+    };
+
+    /**
+     * Check the permissions we need
+     * are satisfied, if not, asks the
+     * user to give permissions.
+     *
+     * @return the user feedback.
+     */
+    private boolean checkPermission() {
+        int result;
+        List<String> listPermissionsNeeded = new ArrayList<>();
+        for (String p : permissions) {
+            result = ContextCompat.checkSelfPermission(this, p);
+            if (result != PackageManager.PERMISSION_GRANTED) {
+                listPermissionsNeeded.add(p);
+            }
+        }
+        if (!listPermissionsNeeded.isEmpty()) {
+            ActivityCompat.requestPermissions(this, listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), 100);
+            return false;
+        }
+        return true;
+    }
+
+    public void onConfigurationChanged(Configuration newConfig) {
         int currentNightMode = newConfig.uiMode & Configuration.UI_MODE_NIGHT_MASK;
         switch (currentNightMode) {
             case Configuration.UI_MODE_NIGHT_NO:
@@ -31,14 +68,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         number = findViewById(R.id.numberToDial);
+        checkPermission();
     }
 
     public void sendToDialer(View view) {
         String num = number.getText().toString();
         Uri add = Uri.parse("tel:" + num);
-        Intent intent = new Intent(Intent.ACTION_DIAL, add);
+        Intent intent = new Intent(Intent.ACTION_CALL, add);
 
         if (intent.resolveActivity(getPackageManager()) != null) {
+            if (checkPermission() != true) {
+                return;
+            }
             startActivity(intent);
         } else {
             Log.d("ImplicitIntents", "Can't handle this intent!");
