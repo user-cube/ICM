@@ -52,6 +52,21 @@ Um click handles é um método que é invocado quando o utilizador clica ou faz 
 * `Toast.LENGTH_LONG` - 3.5 segundos
 * `Toast.LENGTH_SHORT` - 2 segundos
 
+# Variação horizontal do Layout
+Passos:
+* Clicar no botão de orientação;
+* Carregar em `Create Landscape Variation`
+
+O processo acima descrito vai criar um ficheiro xml na pasta `res/layout/` do tipo: `activity_main.xml (land)`.
+Nesse ficheiro podemos criar todas as configurações para a aplicação quando fica no modo horizontal.
+
+# Constraint Layout
+
+Podemos encontrar mais informação sobre este layout realizando o tutorial que se encontra em:
+<a href="https://codelabs.developers.google.com/codelabs/constraint-layout/index.html#0">Google Code Labs</a>
+
+# Linear Layout
+
 # Sumário 
 
 View, ViewGroup, and layouts:
